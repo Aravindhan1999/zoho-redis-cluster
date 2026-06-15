@@ -1,0 +1,13 @@
+---
+- name: Check Redis Status
+  hosts: redis_nodes
+  become: true
+
+  tasks:
+    - name: Check Redis service
+      shell: systemctl is-active redis-server || service redis-server status
+      register: redis_status
+
+    - name: Display Redis status
+      debug:
+        var: redis_status.stdout

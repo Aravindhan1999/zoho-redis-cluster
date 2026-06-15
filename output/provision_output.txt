@@ -1,0 +1,51 @@
+
+PLAY [Provision Redis Nodes] ***************************************************
+
+TASK [Gathering Facts] *********************************************************
+ok: [redis-node-1]
+ok: [redis-node-5]
+ok: [redis-node-2]
+ok: [redis-node-3]
+ok: [redis-node-4]
+ok: [redis-node-6]
+
+TASK [redis : Update apt cache] ************************************************
+ok: [redis-node-4]
+ok: [redis-node-3]
+ok: [redis-node-5]
+ok: [redis-node-1]
+ok: [redis-node-2]
+ok: [redis-node-6]
+
+TASK [redis : Install Redis] ***************************************************
+ok: [redis-node-4]
+ok: [redis-node-1]
+ok: [redis-node-5]
+ok: [redis-node-3]
+ok: [redis-node-2]
+ok: [redis-node-6]
+
+TASK [redis : Enable Redis service] ********************************************
+ok: [redis-node-4]
+ok: [redis-node-3]
+ok: [redis-node-2]
+ok: [redis-node-5]
+ok: [redis-node-1]
+ok: [redis-node-6]
+
+TASK [redis : Start Redis service] *********************************************
+ok: [redis-node-1]
+ok: [redis-node-2]
+ok: [redis-node-4]
+ok: [redis-node-3]
+ok: [redis-node-5]
+ok: [redis-node-6]
+
+PLAY RECAP *********************************************************************
+redis-node-1               : ok=5    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+redis-node-2               : ok=5    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+redis-node-3               : ok=5    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+redis-node-4               : ok=5    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+redis-node-5               : ok=5    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+redis-node-6               : ok=5    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+

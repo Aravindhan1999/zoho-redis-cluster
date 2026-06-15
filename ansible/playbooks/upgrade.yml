@@ -1,0 +1,14 @@
+---
+- name: Upgrade Redis Nodes
+  hosts: redis_nodes
+  become: true
+
+  tasks:
+    - name: Update apt cache
+      apt:
+        update_cache: yes
+
+    - name: Upgrade Redis package
+      apt:
+        name: redis-server
+        state: latest

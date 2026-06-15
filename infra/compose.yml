@@ -1,0 +1,56 @@
+version: '3.8'
+
+services:
+  redis-node-1:
+    build:
+      context: .
+      dockerfile: Containerfile
+    container_name: redis-node-1
+    hostname: redis-node-1
+    tty: true
+    stdin_open: true
+
+  redis-node-2:
+    build:
+      context: .
+      dockerfile: Containerfile
+    container_name: redis-node-2
+    hostname: redis-node-2
+    tty: true
+    stdin_open: true
+
+  redis-node-3:
+    build:
+      context: .
+      dockerfile: Containerfile
+    container_name: redis-node-3
+    hostname: redis-node-3
+    tty: true
+    stdin_open: true
+
+  redis-node-4:
+    build:
+      context: .
+      dockerfile: Containerfile
+    container_name: redis-node-4
+    hostname: redis-node-4
+    tty: true
+    stdin_open: true
+
+  redis-node-5:
+    build:
+      context: .
+      dockerfile: Containerfile
+    container_name: redis-node-5
+    hostname: redis-node-5
+    tty: true
+    stdin_open: true
+
+  redis-node-6:
+    build:
+      context: .
+      dockerfile: Containerfile
+    container_name: redis-node-6
+    hostname: redis-node-6
+    tty: true
+    stdin_open: true

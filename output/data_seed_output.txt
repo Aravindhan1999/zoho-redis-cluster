@@ -1,0 +1,12 @@
+redis-node-2 | CHANGED | rc=0 >>
+PONG
+redis-node-3 | CHANGED | rc=0 >>
+PONG
+redis-node-5 | CHANGED | rc=0 >>
+PONG
+redis-node-4 | CHANGED | rc=0 >>
+PONG
+redis-node-1 | CHANGED | rc=0 >>
+PONG
+redis-node-6 | CHANGED | rc=0 >>
+PONG

@@ -1,0 +1,12 @@
+redis-node-1 | CHANGED | rc=0 >>
+Redis server v=6.0.16 sha=00000000:0 malloc=jemalloc-5.2.1 bits=64 build=e91d7986ac6d5bb6
+redis-node-3 | CHANGED | rc=0 >>
+Redis server v=6.0.16 sha=00000000:0 malloc=jemalloc-5.2.1 bits=64 build=e91d7986ac6d5bb6
+redis-node-4 | CHANGED | rc=0 >>
+Redis server v=6.0.16 sha=00000000:0 malloc=jemalloc-5.2.1 bits=64 build=e91d7986ac6d5bb6
+redis-node-5 | CHANGED | rc=0 >>
+Redis server v=6.0.16 sha=00000000:0 malloc=jemalloc-5.2.1 bits=64 build=e91d7986ac6d5bb6
+redis-node-2 | CHANGED | rc=0 >>
+Redis server v=6.0.16 sha=00000000:0 malloc=jemalloc-5.2.1 bits=64 build=e91d7986ac6d5bb6
+redis-node-6 | CHANGED | rc=0 >>
+Redis server v=6.0.16 sha=00000000:0 malloc=jemalloc-5.2.1 bits=64 build=e91d7986ac6d5bb6

@@ -1,0 +1,35 @@
+
+PLAY [Upgrade Redis Nodes] *****************************************************
+
+TASK [Gathering Facts] *********************************************************
+ok: [redis-node-5]
+ok: [redis-node-1]
+ok: [redis-node-3]
+ok: [redis-node-2]
+ok: [redis-node-4]
+ok: [redis-node-6]
+
+TASK [Update apt cache] ********************************************************
+ok: [redis-node-2]
+ok: [redis-node-4]
+ok: [redis-node-3]
+ok: [redis-node-5]
+ok: [redis-node-1]
+ok: [redis-node-6]
+
+TASK [Upgrade Redis package] ***************************************************
+ok: [redis-node-4]
+ok: [redis-node-2]
+ok: [redis-node-1]
+ok: [redis-node-3]
+ok: [redis-node-5]
+ok: [redis-node-6]
+
+PLAY RECAP *********************************************************************
+redis-node-1               : ok=3    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+redis-node-2               : ok=3    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+redis-node-3               : ok=3    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+redis-node-4               : ok=3    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+redis-node-5               : ok=3    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+redis-node-6               : ok=3    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+

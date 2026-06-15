@@ -1,0 +1,19 @@
+#!/bin/bash
+
+case "$1" in
+  provision)
+    cd ansible && ansible-playbook playbooks/provision.yml
+    ;;
+  status)
+    cd ansible && ansible-playbook playbooks/status.yml
+    ;;
+  upgrade)
+    cd ansible && ansible-playbook playbooks/upgrade.yml
+    ;;
+  verify)
+    cd ansible && ansible redis_nodes -a "redis-server --version"
+    ;;
+  *)
+    echo "Usage: ./redis-tool {provision|status|upgrade|verify}"
+    ;;
+esac

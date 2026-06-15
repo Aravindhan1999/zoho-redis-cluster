@@ -1,0 +1,19 @@
+---
+- name: Update apt cache
+  apt:
+    update_cache: yes
+
+- name: Install Redis
+  apt:
+    name: redis-server
+    state: present
+
+- name: Enable Redis service
+  service:
+    name: redis-server
+    enabled: yes
+
+- name: Start Redis service
+  service:
+    name: redis-server
+    state: started
